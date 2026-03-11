@@ -2,14 +2,14 @@ group 'com.posthog.posthog_flutter'
 version '1.0-SNAPSHOT'
 
 buildscript {
-    ext.kotlin_version = '1.8.10'
+    ext.kotlin_version = '2.3.10'
     repositories {
         google()
         mavenCentral()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.4.2'
+        classpath 'com.android.tools.build:gradle:8.2.2'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
@@ -38,8 +38,8 @@ android {
 
     kotlinOptions {
         jvmTarget = '1.8'
-        languageVersion = "1.6"
-        apiVersion = "1.6"
+        languageVersion = "2.3"
+        apiVersion = "2.3"
     }
 
     sourceSets {
